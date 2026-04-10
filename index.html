@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="HAOS Training">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <title>HAOS Training</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ── SCREENS ──────────────────────────────────────────────────────────────── -->
+
+<div id="screen-programs" class="screen active">
+  <header class="top-bar">
+    <div class="logo">HAOS <span>TRAINING</span></div>
+  </header>
+  <div class="screen-title">My Programs</div>
+  <div id="program-list" class="program-list"></div>
+</div>
+
+<div id="screen-weeks" class="screen">
+  <header class="top-bar">
+    <button class="back-btn" onclick="App.back()">‹ Programs</button>
+    <div id="weeks-program-name" class="top-bar-title"></div>
+  </header>
+  <div id="week-list" class="week-list"></div>
+</div>
+
+<div id="screen-days" class="screen">
+  <header class="top-bar">
+    <button class="back-btn" onclick="App.goToWeeks()">‹ Weeks</button>
+    <div id="days-week-label" class="top-bar-title"></div>
+  </header>
+  <div id="day-tabs" class="day-tabs"></div>
+  <div id="day-content" class="day-content"></div>
+</div>
+
+<!-- ── SCRIPTS ───────────────────────────────────────────────────────────────── -->
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

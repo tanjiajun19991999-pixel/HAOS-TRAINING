@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="#0d0d0d"/>
+
+  <!-- Red accent bar at top -->
+  <rect x="0" y="0" width="512" height="8" rx="4" fill="#cc2200"/>
+
+  <!-- Dumbbell icon, centered -->
+  <!-- Left weight plate -->
+  <rect x="60" y="210" width="50" height="92" rx="14" fill="#cc2200"/>
+  <!-- Left handle collar -->
+  <rect x="110" y="228" width="20" height="56" rx="6" fill="#333"/>
+  <!-- Bar -->
+  <rect x="130" y="244" width="252" height="24" rx="8" fill="#555"/>
+  <!-- Right handle collar -->
+  <rect x="382" y="228" width="20" height="56" rx="6" fill="#333"/>
+  <!-- Right weight plate -->
+  <rect x="402" y="210" width="50" height="92" rx="14" fill="#cc2200"/>
+
+  <!-- "HAOS" text -->
+  <text
+    x="256"
+    y="380"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-weight="900"
+    font-size="88"
+    letter-spacing="8"
+    text-anchor="middle"
+    fill="#ffffff"
+  >HAOS</text>
+
+  <!-- "TRAINING" sub-label -->
+  <text
+    x="256"
+    y="432"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-weight="400"
+    font-size="36"
+    letter-spacing="12"
+    text-anchor="middle"
+    fill="#888888"
+  >TRAINING</text>
+</svg>
