@@ -1,7 +1,7 @@
 // HAOS Training — Service Worker
 // Caches all app shell files for full offline use
 
-const CACHE_NAME = 'haos-training-v3';
+const CACHE_NAME = 'haos-training-v4';
 
 const SHELL_FILES = [
   './',
@@ -10,6 +10,7 @@ const SHELL_FILES = [
   './app.js',
   './data.js',
   './data_tba.js',
+  './data_4day.js',
   './manifest.json',
   './icon.svg'
 ];
