@@ -1,7 +1,7 @@
 // HAOS Training — Service Worker
 // Caches all app shell files for full offline use
 
-const CACHE_NAME = 'haos-training-v4';
+const CACHE_NAME = 'haos-training-v5';
 
 const SHELL_FILES = [
   './',
