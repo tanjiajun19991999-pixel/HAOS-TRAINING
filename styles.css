@@ -12,6 +12,7 @@
   --blue:     #2680eb;
   --purple:   #8b5cf6;
   --green:    #22c55e;
+  --teal:     #14b8a6;
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bot: env(safe-area-inset-bottom, 0px);
 }
@@ -199,6 +200,7 @@ body {
 .exercise-card.type-run          { border-left-color: var(--blue); background: #111d2e; }
 .exercise-card.type-bike         { border-left-color: var(--green); background: #0f1f14; }
 .exercise-card.type-conditioning { border-left-color: var(--purple); background: #161020; }
+.exercise-card.type-mobility     { border-left-color: var(--teal); background: #0d1f1d; }
 .exercise-card.type-rest         { border-left-color: var(--muted); opacity: .6; }
 .exercise-card.done { opacity: .5; }
 .exercise-card.done .exercise-title { text-decoration: line-through; }
@@ -213,6 +215,7 @@ body {
 .type-badge.type-run          { background: #1a3a5c; color: var(--blue); }
 .type-badge.type-bike         { background: #0f3020; color: var(--green); }
 .type-badge.type-conditioning { background: #2a1a40; color: var(--purple); }
+.type-badge.type-mobility     { background: #0f3330; color: var(--teal); }
 .type-badge.type-rest         { background: #222; color: var(--muted); }
 
 .exercise-title {

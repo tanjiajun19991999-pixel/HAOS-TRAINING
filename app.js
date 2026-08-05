@@ -52,11 +52,11 @@ const App = {
             <div class="program-stat-key">Weeks</div>
           </div>
           <div class="program-stat">
-            <div class="program-stat-val" style="color:${prog.color||'#cc2200'}">${prog.weeks[0]?.days.length||7}</div>
+            <div class="program-stat-val" style="color:${prog.color||'#cc2200'}">${prog.daysPerWeek || prog.weeks[0]?.days.length || 7}</div>
             <div class="program-stat-key">Days/Week</div>
           </div>
           <div class="program-stat">
-            <div class="program-stat-val" style="color:${prog.color||'#cc2200'}">3+1</div>
+            <div class="program-stat-val" style="color:${prog.color||'#cc2200'}">${prog.pattern || '3+1'}</div>
             <div class="program-stat-key">Pattern</div>
           </div>
           <div class="program-arrow">›</div>
@@ -157,7 +157,7 @@ const App = {
       card.className = `exercise-card type-${ex.type}${isDone?' done':''}`;
       card.dataset.ei = ei;
 
-      const typeLabel = { strength:'Strength', run:'Run', bike:'Bike', conditioning:'Conditioning', rest:'Rest' }[ex.type] || ex.type;
+      const typeLabel = { strength:'Strength', run:'Run', bike:'Bike', conditioning:'Conditioning', mobility:'Mobility', rest:'Rest' }[ex.type] || ex.type;
       const logIcon   = isDone ? '✓ Completed' : '+ Log Result';
 
       card.innerHTML = `
